@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earth</title>
+    <meta charset="UTF-8">
+    <style>        
+        table {
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        textarea {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <iframe src="header.html" width="100%" scrolling="no" frameborder="0" ></iframe>
+    </header>
+
+    <table>
+        <tr>
+            <td colspan="2" >
+                <h1>Contact us</h1>
+                <p>Just let us know where you are and what you’d like to speak to us about, and we’ll get back to you.</p>
+                <br/> 
+            </td>
+                    
+            <td rowspan="6" >
+                <img src="Gallery/contactus.jpg" alt="Picture of space" width="800" />
+            </td>
+        </tr>
+        <form method="GET" action="serverSimulation.html">
+            <tr>
+                <td>
+                    <label for="name"> Name: </label>
+                </td>
+                <td>
+                    <input id="name" type="text" placeholder="Your name" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email"> Email: </label>
+                </td>
+                <td>
+                    <input name="email" type="email" placeholder="example@domain.com" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tel"> Tel: </label>
+                </td>
+                <td>
+                    <input name="tel" type="tel" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age"> Age: </label>
+                </td>
+                <td>
+                    <input name="age" type="range" min="0" max="100" value="50" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="thoughts">Tell us what you think: </label>
+                </td>
+                <td>
+                    <textarea id="thoughts" placeholder="Message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Submit"/>
+                </td>
+            </tr>
+        </form> 
+    </table>
+     
+</body>
+</html>
