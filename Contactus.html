@@ -52,18 +52,19 @@
             </tr>
             <tr>
                 <td>
-                    <label for="tel"> Tel: </label>
+                    <!-- for атрибута работи в комбинация с id -->
+                    <label for="telInput"> Tel: </label>
                 </td>
                 <td>
-                    <input name="tel" type="tel" />
+                    <input name="tel" type="tel" id="telInput" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="age"> Age: </label>
+                    <label for="ageInput"> Age: </label>
                 </td>
                 <td>
-                    <input name="age" type="range" min="0" max="100" value="50" />
+                    <input name="age" type="range" min="0" max="100" value="50" id="ageInput" />
                 </td>
             </tr>
             <tr>
@@ -76,7 +77,8 @@
             </tr>
             <tr>
                 <td>
-                    <input type="button" value="Submit"/>
+                    <!-- За да сработи формата, тук трябва да имаш type="Submit" -->
+                    <input type="submit" value="Submit"/>
                 </td>
             </tr>
         </form> 
