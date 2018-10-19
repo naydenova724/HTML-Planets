@@ -15,7 +15,10 @@
     </head>
 
     <body>
+        <!-- header тагът не е необходим, тъй като ти го поставяш в другия файл.
+        Другия вариант е да го оставиш тук, и да го махнеш от главната страница, но със сигурност не и на двете места -->
         <header>
+            <!-- Можеш да сложиш тук и <nav> -->
             <table>
                 <tr> 
                     <td>
@@ -23,15 +26,16 @@
                     </td>
                     <nav>
                         <td width="25%"> 
-                            <a href="News.html" title="News" > Planets</a> 
+                            <!-- Добавих, target атрибута, за да може да се зареждат страниците изън iframe-a -->
+                            <a href="News.html" title="News" target="_parent"> Planets</a> 
                         </td>  
 
                         <td width="25%">
-                            <a href="Contactus.html" title="Contacts" > Contact us</a>
+                            <a href="Contactus.html" title="Contacts" target="_parent"> Contact us</a>
                         </td>  
                         
                         <td width="25%">
-                            <a href="Gallery.html" title="Gallery" > Gallery</a>
+                            <a href="Gallery.html" title="Gallery" target="_parent"> Gallery</a>
                         </td> 
                     </nav>
                 </tr>
@@ -39,7 +43,7 @@
                     <td>
                         <ul class="breadcrumb">
                             <li>
-                                <a href="Planets.html">Planets\</a>  
+                                <a href="Planets.html" target="_parent">Planets\</a>  
                             </li>
                         </ul>
                     </td>
